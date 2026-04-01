@@ -147,3 +147,119 @@ html {
 	}
 	
 }
+
+.about {
+	background-color: var(--light-color);
+	padding-top: 83px;
+
+		.about__title {
+		font-style: italic;
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 15px;
+		color: var(--dark-color);
+		}
+
+		.about__text {
+		padding-top: 20px;
+		max-width: 1100px;
+		min-height: 192px;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 40px;
+		line-height: 48px;
+		color: var(--dark-color);
+
+			span {
+				color: #A5A5A5;
+			}
+		}
+
+	.about__services-types {
+		padding-top: 80px;
+		display: flex;
+		justify-content: space-between;
+
+		.about__services {
+			max-width: 50%;
+		}
+
+		.about__services-text {
+			max-width: 50%;
+			align-self: end;
+			font-style: normal;
+			font-weight: 400;
+			font-size: 20px;
+			line-height: 24px;
+			letter-spacing: 0.02em;
+			color: var(--dark-color)
+		}
+
+		.about__services__subtitle {
+			font-style: italic;
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 19px;
+			color: var(--dark-color);
+		}
+
+		ul {
+			margin-top: 20px;
+			padding-left: 0px;
+
+			li {
+				list-style-type: none;
+				padding-top: 10px;
+				font-style: normal;
+				font-weight: 400;
+				font-size: 16px;
+				line-height: 19px;
+				color: var(--dark-color);
+			}
+		}
+
+	}
+}
+
+.works {
+	padding-top: 77px;
+	min-height: 1000px;
+	background-color: var(--light-color);
+
+	.works__title {
+		text-align: center;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 40px;
+		line-height: 48px;
+		color: var(--dark-color);
+
+			span {
+				line-height: 48px;
+				color: var(--dark-color);
+				text-decoration: underline;
+			}
+	}
+
+	.works__templates {
+		margin-top: 53px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		row-gap: 50px;
+		column-gap: 30px;
+		padding-bottom: 100px;
+
+		.works__templates-pics {
+			/* width: 49%; */
+			max-width: 685px;
+			background: url(bridge-4915764_1280.jpg);
+			box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+		}
+
+	}
+
+	.works__templates:last-child {
+			 justify-content: start;
+		}
+}
