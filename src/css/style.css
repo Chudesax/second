@@ -242,18 +242,17 @@ html {
 	}
 
 	.works__templates {
-		margin-top: 53px;
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
-		row-gap: 50px;
+		margin-top: 50px;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(2, 1fr) 700px;
 		column-gap: 30px;
+		row-gap: 50px;
 		padding-bottom: 100px;
 
 		.works__templates-pics {
-			/* width: 49%; */
-			max-width: 685px;
-			background: url(bridge-4915764_1280.jpg);
+			width: 100%;
+			/* background: url(bridge-4915764_1280.jpg);  */
 			box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
 		}
 
