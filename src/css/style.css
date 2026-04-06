@@ -234,31 +234,62 @@ html {
 		line-height: 48px;
 		color: var(--dark-color);
 
-			span {
+			/* span {
 				line-height: 48px;
 				color: var(--dark-color);
 				text-decoration: underline;
-			}
+			} */
 	}
 
 	.works__templates {
 		margin-top: 50px;
 		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-		grid-template-rows: repeat(2, 1fr) 700px;
+		grid-template-columns: repeat(2, minmax(auto, 1fr));
+		grid-template-rows: repeat(auto-fill, 1fr);
 		column-gap: 30px;
 		row-gap: 50px;
-		padding-bottom: 100px;
 
 		.works__templates-pics {
 			width: 100%;
-			/* background: url(bridge-4915764_1280.jpg);  */
 			box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
 		}
+	}
+}
 
+.inspiration {
+	background-color: var(--light-color);
+
+	.inspiration__title {
+		padding-top: 80px;
+		text-align: center;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 40px;
+		line-height: 48px;
+		color: var(--dark-color);
 	}
 
-	.works__templates:last-child {
-			 justify-content: start;
-		}
+	.inspiration__grid {
+		margin-top: 50px;
+		display: grid;
+		grid-template-columns: repeat(4, minmax(auto, 1fr));
+		grid-template-rows: repeat(2, minmax(auto, 1fr));
+		gap: 30px;
+	}
+
+	.inspiration__grid-img {
+		width: 100%;
+		box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+	}
+
+	.wide {
+		grid-column: 2 / span 2;
+		grid-row: 2;
+	}
+
+	.tall {
+		grid-column: 4;
+		grid-row: 1 / span 3;
+	}
+
 }
