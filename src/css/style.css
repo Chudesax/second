@@ -223,7 +223,6 @@ html {
 
 .works {
 	padding-top: 77px;
-	min-height: 1000px;
 	background-color: var(--light-color);
 
 	.works__title {
@@ -280,7 +279,9 @@ html {
 
 	.inspiration__grid-img {
 		width: 100%;
+		height: 100%;
 		box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+		object-fit: cover;
 	}
 
 	.wide {
@@ -293,4 +294,35 @@ html {
 		grid-row: 1 / span 2;
 	}
 
+}
+
+.customers {
+	background-color: var(--light-color);
+	padding: 80px 0 144px 0;
+
+	.customers__title {
+		text-align: center;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 40px;
+		line-height: 48px;
+		color: var(--dark-color);
+	}
+
+	.customers__wrapper {
+		padding-top: 53px;
+		display: grid;
+		grid-template-columns: repeat(4, minmax(auto, 1fr));
+		grid-auto-columns: minmax(auto, 1fr);
+		grid-auto-rows: minmax(auto, 1fr);
+		gap: 30px;
+	}
+
+	.customers__wrapper-img {
+		width: 100%;
+	}
+
+	.customers__wrapper-item {
+		box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+	}
 }
