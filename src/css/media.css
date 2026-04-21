@@ -28,8 +28,8 @@
  }
 
  .about__text {
-	max-width: 676px;
-	min-height: 116px;
+	/* max-width: 676px;
+	min-height: 116px; */
 	font-size: 24px;
   line-height: 29px;
 }
@@ -86,5 +86,153 @@
 .footer__number {
   padding: 30px 0 0 0;
 }
+
+}
+
+@media (max-width: 576px) {
+
+  :root {
+    --container-padding-inline: 15px;
+    --footer-padding-inline: 15px;
+  }
+
+  .promo {
+    padding-top: 50px;
+    min-height: 500px;
+  }
+
+  .promo__title {
+    font-size: 24px;
+    line-height: 31px;
+  }
+
+  .promo__subtitle {
+    font-size: 16px;
+    padding-top: 35px;
+    line-height: 19px;
+  }
+
+  .btn {
+    max-width: 120px;
+    max-height: 30px;
+    font-size: 14px;
+    margin-top: 20px;
+  }
+
+  .keywords li:nth-last-child(-n +11) {
+    display: none;
+  }
+
+  .promo__address {
+    padding: 233px 0 30px;
+  }
+
+  .promo__address::before {
+    display: none;
+  }
+
+  .about {
+    padding-top: 50px;
+  }
+
+    .about__services-types ul li:first-child::before,
+    .about__services-types ul li:nth-child(3)::before {
+      display: none;
+    }
+
+    .about .about__text {
+      padding-top: 20px;
+      font-size: 16px;
+      line-height: 19px;
+    }
+
+    .about__services-types {
+      padding-top: 20px;
+    }
+
+    .about__services-types .about__services__subtitle {
+      font-size: 12px;
+    }
+
+    .about__services-list {
+      padding-top: 20px;
+    }
+
+    .about__services-types ul li {
+      padding-top: 5px;
+      font-size: 14px;
+      line-height: 17px;
+    }
+
+    .about__services-types .about__services-text {
+      padding-top: 20px;
+      font-size: 12px;
+      line-height: 17px;
+    }
+
+    .works {
+      padding-top: 50px;
+    }
+
+    .works__title {
+      font-size: 24px;
+      line-height: 29px;
+    }
+
+    .works__title::after {
+      content: "";
+      display: block;
+      margin-left: 78px;
+      width: 75px;
+      height: 2px;
+      background-color: var(--dark-color);
+    }
+
+    .works__templates {
+      margin-top: 0;
+      padding-top: 43px;
+      grid-template-columns: 1fr;
+      row-gap: 30px;
+    }
+
+
+    .inspiration {
+      /* padding-top: 50px; */
+    }
+
+    .inspiration__title {
+      font-size: 24px;
+      line-height: 29px;
+    }
+
+    .inspiration__title span::after {
+      content: "";
+      display: block;
+      margin-left: 78px;
+      width: 75px;
+      height: 2px;
+      background-color: var(--dark-color);
+    }
+
+    .inspiration__grid {
+      grid-template-columns: 2fr;
+      grid-template-rows: repeat(7, auto);
+      row-gap: 30px;
+      column-gap: 0;
+    }
+
+    .inspiration__grid-item {
+      grid-column: 1 / span 2;
+    }
+
+    .tall {
+      grid-column: 1 / span 2;
+      grid-row: 4 / span 2;
+    }
+
+    .wide {
+      grid-column: 1 / span 2;
+      grid-row: 7;
+    }
 
 }
