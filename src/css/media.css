@@ -197,10 +197,11 @@
 
 
     .inspiration {
-      /* padding-top: 50px; */
+      /* padding: 50px 0 50px 0; */
     }
 
     .inspiration__title {
+      padding-top: 50px;
       font-size: 24px;
       line-height: 29px;
     }
