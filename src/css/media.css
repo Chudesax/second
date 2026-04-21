@@ -235,4 +235,32 @@
       grid-row: 7;
     }
 
+    .customers {
+      padding: 50px 0 50px 0;
+    }
+
+    .customers__title {
+      font-size: 24px;
+      line-height: 29px;
+    }
+
+    .customers__wrapper {
+      padding-top: 33px;
+      grid-template-columns: repeat(2, minmax(auto, 1fr));
+      column-gap: 36px;
+      row-gap: 20px;
+    }
+
+    .footer__flex-wrapper {
+      align-items: center;
+    }
+
+    .footer address {
+      order: 2;
+    }
+
+    .footer__number {
+      order: 1;
+    }
+
 }
